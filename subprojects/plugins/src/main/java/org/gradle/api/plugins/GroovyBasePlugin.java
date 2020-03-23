@@ -179,9 +179,9 @@ public class GroovyBasePlugin implements Plugin<Project> {
     }
 
     private static class ExcludeGroovySourceSpec implements Spec<FileTreeElement> {
-        private final SourceDirectorySet groovySource;
+        private final FileCollection groovySource;
 
-        public ExcludeGroovySourceSpec(SourceDirectorySet groovySource) {
+        public ExcludeGroovySourceSpec(FileCollection groovySource) {
             this.groovySource = groovySource;
         }
 
